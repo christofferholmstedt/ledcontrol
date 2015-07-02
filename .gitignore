@@ -32,3 +32,4 @@ coverage_report
 .autotools
 config.guess
 config.sub
+test-driver
