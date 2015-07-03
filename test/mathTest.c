@@ -1,5 +1,4 @@
-#include "unity.h"
-#include "ledcontrolmath.h"
+#include "unity_fixture.h"
 
 TEST_GROUP(LedControlMath);
 
@@ -15,10 +14,5 @@ TEST_TEAR_DOWN(LedControlMath)
 
 TEST(LedControlMath, twoPlusTwoIsFour)
 {
-	// TODO
-}
-
-TEST(LedControlMath, twoPlusThreeIsFive)
-{
-	// TODO
+	TEST_ASSERT_EQUAL(0,1);
 }

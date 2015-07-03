@@ -3,7 +3,7 @@
 
 AC_PREREQ([2.69])
 AC_INIT([ledcontrol], [0.1.0], [christoffer@christofferholmstedt.se])
-AM_INIT_AUTOMAKE
+AM_INIT_AUTOMAKE([subdir-objects])
 AC_CONFIG_SRCDIR([src/main.c])
 AC_CONFIG_HEADERS([config.h])
 

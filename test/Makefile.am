@@ -1,16 +1,20 @@
-UNITY_ROOT = ../../unity
-
 UNITY_FILES = \
-	$(UNITY_ROOT)/src/unity.c \
-	$(UNITY_ROOT)/extras/fixture/src/unity_fixture.c
+	unity/src/unity.c \
+	unity/extras/fixture/src/unity_fixture.c
 
 UNITY_INCLUDE = \
-	-I$(UNITY_ROOT)/src \
-	-I$(UNITY_ROOT)/extras/fixture/src
+	-Iunity/src \
+	-Iunity/extras/fixture/src
+
+TEST_FILES = \
+	test_runners/allTestRunner.c \
+	test_runners/ledControlMathTestRunner.c \
+	mathTest.c
 
 check_PROGRAMS = alltests
 
-alltests_SOURCES = $(UNITY_FILES)
+alltests_SOURCES = $(UNITY_FILES) $(TEST_FILES)
 alltests_CPPFLAGS = $(UNITY_INCLUDE)
+alltests_CFLAGS = $(AM_CFLAGS)
 
 TESTS = alltests
