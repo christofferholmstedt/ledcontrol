@@ -11,6 +11,10 @@ AC_CONFIG_FILES([Makefile
 		 src/Makefile
 		 test/Makefile])
 
+# Set CFLAGS
+LEDCONTROL_TOOLS_CFLAGS="-Wall -Werror"
+AC_SUBST([LEDCONTROL_TOOLS_CFLAGS])
+
 # Checks for programs.
 AC_PROG_CC
 

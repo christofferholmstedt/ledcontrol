@@ -1,3 +1,5 @@
+AM_CFLAGS = @LEDCONTROL_TOOLS_CFLAGS@
+
 UNITY_FILES = \
 	unity/src/unity.c \
 	unity/extras/fixture/src/unity_fixture.c
