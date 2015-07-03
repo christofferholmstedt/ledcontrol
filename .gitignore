@@ -33,3 +33,8 @@ coverage_report
 config.guess
 config.sub
 test-driver
+.dirstamp
+
+# Other files
+*.log
+*.trs
