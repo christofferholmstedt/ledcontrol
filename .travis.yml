@@ -5,4 +5,13 @@ before_script:
         - autoreconf -i
 
 script:
-        - ./configure && make && make check
+        # "configure", "make" and "make check" is for...
+        # ...making sure the application builds (in-source build).
+        # ...making sure all unit tests passes.
+        - ./configure
+        - make
+        - make check
+        # "make distcheck" is for...
+        # ...making sure the application builds (out-of-source/VPATH build).
+        # ...creation of source distribution tar file.
+        - make distcheck
