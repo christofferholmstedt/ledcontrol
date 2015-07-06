@@ -1,0 +1,13 @@
+LedControl - Controlling leds on Linux
+======================================
+[![Build Status](https://travis-ci.org/christofferholmstedt/ledcontrol.svg)](https://travis-ci.org/christofferholmstedt/ledcontrol)
+
+This project is a simple C program to control the leds on any linux
+installation that has one or more leds published in the /sys/class/leds
+directory.
+
+# Meta
+As a primary goal during the development of this program is to learn TDD with
+Unity test framework and how to properly set up Autotools toolchain. Secondary
+goal is to incorporate automatic testing with Travis-CI.org, test coverage with
+Coveralls.io and documentation publishing with readthedocs.org.
