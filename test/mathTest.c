@@ -14,5 +14,7 @@ TEST_TEAR_DOWN(LedControlMath)
 
 TEST(LedControlMath, twoPlusTwoIsFour)
 {
+	TEST_IGNORE_MESSAGE("Test not implemented.");
+
 	TEST_ASSERT_EQUAL(0,1);
 }
